@@ -15,3 +15,73 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    padding: 25px;
+    background-color: #EAEAEA;
+}
+.header__body {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+    text-align: center;
+    font-size: 22px;
+    padding: 25px;
+    border: 1px solid #E8C25A;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.menu__list {
+    display: flex;
+    gap: 25px;
+}
+.menu__list-link {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    position: relative;
+}
+.menu__list-link a {
+    color:#E8C25A;
+}
+.menu__list-link::after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color:#E8C25A;
+}
+.menu__list-link:hover.menu__list-link::after {
+    width: 100%;
+    transition: all .6s ease; 
+} 
+.header__contancts {
+    max-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+.contacts__info a {
+    color: black;
+}
+.contacts__info {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all .6s ease;
+}
+.contacts__info:hover {
+    text-shadow: 1px 1px 2px #000;
+}
+/* Header */
